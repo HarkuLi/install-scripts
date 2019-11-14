@@ -9,3 +9,9 @@ chsh -s /bin/zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 perl -i -pe "s/ZSH_THEME=.*/ZSH_THEME=geoffgarside/g" ~/.zshrc
 source ~/.zshrc
+
+# git
+brew install git
+
+# vs code
+brew cask install visual-studio-code
