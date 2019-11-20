@@ -15,3 +15,6 @@ brew install git
 
 # vs code
 brew cask install visual-studio-code
+
+# docker
+brew cask install docker
