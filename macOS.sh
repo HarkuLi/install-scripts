@@ -18,3 +18,6 @@ brew cask install visual-studio-code
 
 # docker
 brew cask install docker
+
+# postman
+brew cask install postman
