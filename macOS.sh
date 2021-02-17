@@ -14,10 +14,10 @@ source ~/.zshrc
 brew install git
 
 # vs code
-brew cask install visual-studio-code
+brew install --cask visual-studio-code
 
 # docker
-brew cask install docker
+brew install --cask docker
 
 # postman
-brew cask install postman
+brew install --cask postman
