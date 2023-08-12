@@ -1,4 +1,8 @@
-#/bin/sh
+#!/bin/bash
 
 sudo apt-get update
-sudo apt-get install build-essential dkms
+sudo apt-get install -y build-essential dkms
+
+read -n 1 -s -r -p "Please insert and run the Guest Additions CD image, and then enter any key to continue..."
+
+sudo usermod -aG vboxsf $USER
