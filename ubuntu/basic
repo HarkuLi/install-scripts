@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# timezone
+timedatectl set-timezone Asia/Taipei
+
+# git
+add-apt-repository -y ppa:git-core/ppa
+apt-get install -y git
+git config --global core.editor "vim"
+
+# zsh
+apt-get install -y zsh
+## oh my zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
+perl -i -pe "s/ZSH_THEME=.*/ZSH_THEME=geoffgarside/g" ~/.zshrc
+source ~/.zshrc
