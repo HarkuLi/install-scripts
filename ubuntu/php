@@ -3,8 +3,9 @@
 # php relation
 
 ## php
-apt-get install php-cli
-apt-get install php-curl
+sudo apt-get update
+sudo apt-get install php-cli
+sudo apt-get install php-curl
 
 ## composer
 php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
@@ -14,4 +15,4 @@ php -r "unlink('composer-setup.php');"
 mv composer.phar /usr/local/bin/composer
 
 # zip
-apt-get install zip unzip php-zip
+sudo apt-get install zip unzip php-zip
