@@ -40,6 +40,11 @@ sudo apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plug
 sudo usermod -aG docker $USER
 newgrp docker
 
+# sshd
+sudo apt-get install openssh-server
+sudo perl -i -pe "s/#PasswordAuthentication yes/PasswordAuthentication no/g" /etc/ssh/sshd_config
+sudo service sshd restart
+
 # zsh
 sudo apt-get install -y zsh
 ## oh my zsh
